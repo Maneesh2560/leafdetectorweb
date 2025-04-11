@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+
+# VSCode settings
+.vscode/
+
+# Node.js modules
+node_modules/
+
+# TensorFlow model files (if you're saving models in a specific directory)
+# Add any specific directory if needed, for example:
+# tensorflow_models/
+*.h5
+*.pb
+*.keras
+checkpoint
+saved_model/
+
+# Jupyter Notebook checkpoints and kernel files
+.ipynb_checkpoints/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+training/
+
+code.txt

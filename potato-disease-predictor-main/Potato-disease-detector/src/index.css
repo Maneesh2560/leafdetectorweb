@@ -1,0 +1,128 @@
+
+body{
+  height: 88vh;
+  width: 98vw;
+  background-image: url("./assets/bgpic.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+.background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2); /* White overlay with opacity */
+  backdrop-filter: blur(2px); /* Apply blur effect */
+  z-index: 1; /* Ensure the overlay is on top of the background */
+}
+
+.leaf-icon {
+  margin-right: 20px; /* Adjust the value as needed for spacing */
+}
+ 
+.navbar {
+  position: fixed; /* Position the navbar at the top of the page */
+  top: 0; /* Align it to the top */
+  left: 0; 
+  
+  width: 98vw;
+  padding-left: 20px;
+  padding-right: 25px;
+  background-color: rgb(199, 63, 53);
+  color: white;
+  font-size: 20px; /* Increase the font size to make text larger */
+  font-weight: bold;
+  text-align: left;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the content */
+  align-items: center;
+  z-index: 1000; 
+  
+  
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+.drag-and-drop {
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.drag-and-drop {
+  position: relative;
+  z-index: 1000;
+  margin-top: 120px; /* Push it below the navbar */
+  padding: 20px;
+  min-width:600px ;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  
+  
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drag-and-drop h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: rgb(199, 63, 53); /* Match the navbar color */
+}
+
+.image-preview {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.delete-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(199, 63, 53);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  
+}
+
+.delete-button:hover {
+  background-color: rgb(160, 44, 44);
+}
+
+.loader{
+  color: '#be6a77 !important',
+}
+
+.prediction-result {
+  position: relative;
+  z-index: 1000;
+  margin-top: 20px;
+  padding: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  font-size: 20px;
+}

@@ -1,0 +1,28 @@
+.app {
+  height: 100vh;
+  background-image: url("./assets/bgpic.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(160, 44, 44, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+.drag-and-drop {
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: center;
+}
